@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+
+<body>
+    <div class="controls">
+        <button id="loadImage" type="button" onclick="changeAction(this)">加载背景图</button>
+         <input id="imgUrl" value="http://demo.tenda.icu/fabric/img/demo.jpg">
+         <button id="loadFromJson" type="button" onclick="changeAction(this)">加载json</button>
+         <input id="jsonValue">
+    </div>
+
+    <div class="controls">
+        <button id="select" type="button" onclick="changeAction(this)">选择</button>
+        <button id="draw" type="button" onclick="changeAction(this)">画线</button>
+        <button id="fangda" type="button" onclick="changeAction(this)">放大</button>
+        <button id="suoxiao" type="button" onclick="changeAction(this)">缩小</button>
+		<button id="crop" type="button" onclick="changeAction(this)">裁剪</button>
+		<button id="cropFinish" type="button" onclick="changeAction(this)">裁剪完成</button>
+    </div>
+    <div style="display:flex;flex-direction:row;margin: 5px 0">
+        <button type="button" onclick="addRect()">添加矩形</button>
+        <button type="button" onclick="addTriangle()">添加三角形</button>
+    </div>
+    <div>
+        <button type="button" onclick="toJSON()">下载json</button>
+        <button type="button" onclick="downloadImage()">下载图片</button>
+        <button type="button" onclick="downloadSVG()">下载svg</button>
+    </div>
+    <div style="display:flex;flex-direction:row;">
+        <div>
+            <canvas id="c" style="margin: 20px 10px;"></canvas>
+        </div>
+    </div>
+
+    <script src="lib/fabric.js"></script>
+    <script src="js/demo.js"></script>
+
+</body>
