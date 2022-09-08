@@ -328,6 +328,7 @@ function addText() {
 			top: 50,
 			left: 100,
             fill: '#fff',
+			fontFamily:'VT323',
 			fontSize: 60,
 		})
 	);
