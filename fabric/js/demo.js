@@ -328,7 +328,7 @@ function addText() {
 			top: 50,
 			left: 100,
             fill: '#fff',
-			fontFamily:'Monaco',
+			// fontFamily:'Monaco',
 			fontSize: 60,
 		})
 	);
