@@ -327,7 +327,8 @@ function addText() {
 		new fabric.Textbox('テキスト',{
 			top: 50,
 			left: 100,
-            fill: '#0DB1DF',
+            fill: '#fff',
+			fontFamily:'Times New Roman',
 			fontSize: 60,
 		})
 	);
@@ -409,7 +410,7 @@ function init() {
 		"skewY": 0,
 		"cropX": 0,
 		"cropY": 0,
-		"src": "http://localhost:8080/pic/demo.jpg",
+		"src": "http://demo.tenda.icu/fabric/img/demo.jpg",
 		"crossOrigin": "anonymous",
 		"filters": []
 	};
