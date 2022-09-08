@@ -52,6 +52,9 @@ function changeAction(target) {
 		case "addRect":
 			addRect();
 			break;
+		case "addText":
+			addText();
+			break;
 		case "addTriangle":
 			addTriangle();
 			break;
@@ -317,6 +320,17 @@ function suoxiao() {
 	canvas.setWidth(canvas.width / 1.2);
 	canvas.setZoom(canvas.getZoom() / 1.2);
 	// canvas.backgroundImage.scaleToWidth(canvas.width)
+}
+
+function addText() {
+	canvas.add(
+		new fabric.Textbox('テキスト',{
+			top: 50,
+			left: 100,
+            fill: '#0DB1DF',
+			fontSize: 60,
+		})
+	);
 }
 
 /** 添加矩形 */
