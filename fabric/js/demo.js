@@ -328,7 +328,6 @@ function addText() {
 			top: 50,
 			left: 100,
             fill: '#fff',
-			fontFamily:'Times New Roman',
 			fontSize: 60,
 		})
 	);
